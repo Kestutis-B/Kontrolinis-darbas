@@ -1,0 +1,95 @@
+header div {
+  padding: 4%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: none;
+}
+
+.burger-menu {
+  display: inline;
+}
+
+.section1 {
+  /*sutvarkyti rozini*/
+  background-image: url("./img/graphic.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  padding: 5%;
+}
+
+h5 {
+  color: rgb(234, 62, 116);
+}
+
+.first-h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.first {
+  width: 70%;
+}
+
+.btn {
+  background-color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+  border: 2px solid;
+  border-color: orange green orange red;
+}
+
+.second {
+  padding: 40px 10px 10px 5%;
+  background-image: url("./img/background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.third {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+section div img {
+  padding: 10px;
+}
+
+/*mobile versijoje nera 4-o logo*/
+.none-img {
+  display: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* padding: 5%;
+  width: 20%;
+  background-color: grey;
+  justify-content: space-around; */
+}
+
+.card1 {
+  display: block;
+  background-color: rgb(225, 225, 225);
+  border-radius: 15px;
+}
+
+.flex-container {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-text {
+  text-align: right;
+}
