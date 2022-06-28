@@ -37,10 +37,9 @@ h5 {
 .btn {
   background-color: white;
   padding: 15px 40px;
+  border-image: url(./img/background.svg) 30 stretch;
   border-radius: 30px;
-  border: 2px solid;
-  border-color: orange green orange red;
-  /*button border spalvos kaip background.svg failo*/
+  /*border-radius nesuapvalina kampu, kai parinkta border image paveikslas*/
 }
 
 .second {
@@ -74,18 +73,17 @@ section div img {
   text-decoration: underline;
 }
 
-.cards {
+.grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 10px;
-  /* padding: 5%;
-  width: 20%;
-  background-color: grey;
-  justify-content: space-around; */
+  grid-template-columns: repeat(4, 310px);
+  grid-auto-rows: auto;
+  grid-column-gap: 30px;
 }
 
 .card1 {
-  display: block;
+  display: grid;
+  grid-template-rows: 1fr 150px;
+  grid-template-columns: auto;
   background-color: rgb(225, 225, 225);
   border-radius: 15px;
 }
@@ -93,11 +91,28 @@ section div img {
 .flex-container {
   padding: 0 30px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+}
+
+.flex-container span p,
+h3 {
+  margin: 10px;
 }
 
 .right-text {
   text-align: right;
+}
+
+.flex-items {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.slidecontainer {
+  overflow: auto;
+  white-space: no-wrap;
 }
 
 .section4 {
@@ -133,6 +148,7 @@ footer {
 i {
   opacity: 0.4;
   padding-right: 8px;
+  margin-left: 0;
 }
 
 .footer-div2 {
@@ -143,6 +159,10 @@ i {
 
 .footer-span {
   padding-right: 80px;
+}
+
+.footer-span h3 {
+  margin-left: 0;
 }
 
 .footer-p {
@@ -184,8 +204,22 @@ i {
     background-position: right;
   }
 
+  .second {
+    margin-left: 5%;
+    width: 85%;
+    border-radius: 10px;
+  }
+
+  .third {
+    margin: 5%;
+  }
+
   .none-img {
     display: inline;
+  }
+
+  .section3 {
+    margin: 5%;
   }
 
   .section4 {
